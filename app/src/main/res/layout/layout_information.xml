@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+    <TextView
+            android:id="@+id/tvpop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Độ kết tủa"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpop"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tvhumidity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Độ ẩm"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/humidity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvhumidity1"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tvwind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Tốc độ gió"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/WindSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwind"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tvvisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pop"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:text="Tầm nhìn"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvvisibility"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tvsea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidity1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Mực nước biển"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/SeaLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvsea"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tvclouds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WindSpeed"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Mây che phủ"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/clouds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvclouds"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+</RelativeLayout>

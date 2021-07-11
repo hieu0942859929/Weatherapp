@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_border_item"
+            tools:ignore="UselessParent">
+
+        <TextView
+                android:id="@+id/perDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perDay1"
+                android:layout_marginStart="15dp"
+                android:text="ngay"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/perDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="ngay"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:id="@+id/imagePerDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/perDay"
+                android:src="@drawable/ic_baseline_arrow_downward_24"/>
+
+        <TextView
+                android:id="@+id/statusPerDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imagePerDay"
+                android:text="status"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/minTemp"
+                android:src="@drawable/ic_baseline_arrow_downward_24"/>
+
+        <TextView
+                android:id="@+id/minTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="min temp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minTemp"
+                android:layout_toStartOf="@id/maxTemp"
+                android:src="@drawable/ic_baseline_arrow_upward_24"/>
+
+        <TextView
+                android:id="@+id/maxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/minTemp"
+                android:text="max temp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+</LinearLayout>

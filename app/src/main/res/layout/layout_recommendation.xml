@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/ic_baseline_keyboard_return_24"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/khuyen_cao_chung"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_khuyen_cao_chung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Khuyến cáo chung của bộ y tế"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/covid_5k"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                    android:id="@+id/play_covid_5k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bộ y tế khuyến cáo 5k"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/covid_hocsinh"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_covid_hocsinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bộ y tế khuyến cáo cho hs sv"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/covid_laodong"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_covid_laodong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bộ y tế khuyến cáo cho người lao động"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/thoiquencanthaydoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_thoiquencanthaydoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nhấn để xem những thói quen cần đổi"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/hdcachlytainha"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_hdcachlytainha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nhấn để xem hướng dẫn cách ly tại nhà"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/canlamgikhiho"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_canlamgikhiho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Cần làm gì khi có biểu hiện ho,.."/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/phuongtiencongcong"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_phuongtiencongcong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Những điều cần tránh khi dùng PTCC"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/huongdandeokhautrang"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_huongdandeokhautrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hướng dẫn đeo khẩu trang"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/thamgiagiaothong"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_thamgiagiaothong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Những điều cần làm khi tham gia GT"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/phanbiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_phanbiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Phân biệt covid với ốm, ho thông thường"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/ruatay"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_ruatay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hướng dẫn rửa tay đúng cách"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/tiemvaccin"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_tiemvaccin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Những điều cần làm trước và sau tiêm vaccin"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                <VideoView
+                        android:id="@+id/cachlytainha"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/play_cachlytainha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Những trường hợp được cách ly tại nhà"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

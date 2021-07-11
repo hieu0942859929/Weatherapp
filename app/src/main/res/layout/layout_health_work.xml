@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circle_progress_background"
+                    android:rotation="-90"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/thermometer"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/circle_progress_bar_temp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circle_progress_foreground"
+                    android:rotation="-90"/>
+        </FrameLayout>
+
+
+        <TextView
+                android:id="@+id/tvCircleTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/frameLayout"
+                android:text="Chỉ số nhiệt"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tvCircleOfTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCircleTemp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frameLayout"
+                android:textColor="#FFFFFF"/>
+
+        <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frameLayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="------------------------------------------------------------------------------------"/>
+
+        <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/a"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circle_progress_background"
+                    android:rotation="-90"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imageInProgress"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/human_running"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/circle_progress_bar_run"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circle_progress_foreground"
+                    android:rotation="-90"/>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/tvCircleRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/someThing"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frameLayout1"
+                android:text="Thích hợp chạy"
+                android:textColor="#FFFFFF"/>
+
+        <TextView
+                android:id="@+id/someThing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/frameLayout1"
+                android:text="Khả năng hoạt động"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tvCircleStatusRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCircleRun"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frameLayout1"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="tvCircleStatusRun"
+                android:text="Nhấn để xem điều kiện ảnh hưởng"
+                android:textColor="#FFFFFF"/>
+
+        <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frameLayout1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="------------------------------------------------------------------------------------"/>
+
+        <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/b"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/circle_progress_background"
+                    android:rotation="-90"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imageRain"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/droplets"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/circle_progress_bar_rain"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circle_progress_foreground"
+                    android:rotation="-90"/>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/someThing1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/frameLayout2"
+                android:text="Chỉ số mưa"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tvCircleRain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/someThing1"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frameLayout2"
+                android:text="không khí mát"
+                android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</LinearLayout>

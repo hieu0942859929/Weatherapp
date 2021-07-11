@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageWind"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/windmill"/>
+
+        <TextView
+                android:id="@+id/tvDirection1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imageWind"
+                android:text="Hướng gió: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tvDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tvDirection1"
+                android:text="Hướng gió"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tvWindSpeed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDirection"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imageWind"
+                android:text="Tốc độ gió: "
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"/>
+
+        <TextView
+                android:id="@+id/tvWindSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDirection"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tvWindSpeed1"
+                android:text="Tốc độ gió"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/underLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWindSpeed"
+                android:layout_toEndOf="@id/imageWind"
+                android:text="----------------------------------------------------------"/>
+
+        <TextView
+                android:id="@+id/tvPressure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/underLine"
+                android:layout_toStartOf="@id/tvPressure"
+                android:text="Sức ép: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tvPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/underLine"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="Pressure"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+</LinearLayout>

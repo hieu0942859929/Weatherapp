@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarSize="8dp"
+            tools:context=".MainActivity">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <TextClock
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:format24Hour="hh:mm:ss"
+                    android:text="@string/date_time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTime"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/date_time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDate"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/country"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+
+            <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDate"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/tvCountry"
+                    android:text="@string/city"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+
+            <ImageButton
+                    android:id="@+id/buttonTemp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@null"
+                    android:onClick="click"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:textSize="20sp"/>
+
+
+            <ImageButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toStartOf="@id/buttonTemp"
+                    android:background="@drawable/backgroud_location"
+                    android:onClick="click"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="horizontal">
+
+            <include layout="@layout/layout_main_temp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+
+                <TextView
+                        android:id="@+id/tvDuBao7Ngay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Dự báo 7 ngày "
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <include
+                        layout="@layout/weather_of_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvDuBao7Ngay"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                    android:id="@+id/tvDuBao24h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Dự báo 24h"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include
+                    layout="@layout/gridview_weather_24h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDuBao24h"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Chi tiết"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include layout="@layout/layout_information"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gió và Áp suất"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include layout="@layout/layout_wind_pressure"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sức khỏe và Hoạt động"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include layout="@layout/layout_health_work"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <TextView
+                    android:id="@+id/tvAir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Chỉ số ô nhiễm không khí"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include layout="@layout/layout_air_pollution"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/alerta"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Thông tin cơ bản về dịch Covid-19"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/alerta"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Số liệu thống kê lũy kế"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include
+                    layout="@layout/layout_covid_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Số liệu thống kê trong ngày"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+            <include
+                    layout="@layout/layout_covid_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Vaccin hiện có:"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/vaccine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Số ca đang nhiễm bệnh:"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Số ca đã được xét nghiệm:"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/tests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Nhiệt độ phát triển phù hợp nhất của Coronavirus trên bề mặt môi trường là từ 4°C – 20°C. Vậy nên với nhiệt độ hiện tại, chúng tôi khuyến cáo :"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/weatherWithCovid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#AE0303"
+                        android:textStyle="bold"/>
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/recommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="Nhấn để xem khuyến cáo của bộ y tế"
+                    android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_constraintlayout"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Bản đồ"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+
+            <pl.droidsonroids.gif.GifImageButton
+                    android:id="@+id/imageBtnRadar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@null"
+                    android:cropToPadding="true"
+                    android:src="@drawable/radar"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

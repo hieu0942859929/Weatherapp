@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/one"
+            android:title="Tốc độ gió">
+        <menu>
+            <item
+                    android:id="@+id/km"
+                    android:title="km/h"/>
+            <item
+                    android:id="@+id/m"
+                    android:title="m/h"/>
+        </menu>
+    </item>
+    <item
+            android:id="@+id/two"
+            android:title="Áp suất">
+        <menu>
+            <item
+                    android:id="@+id/mBar"
+                    android:title="mBar/hPa"/>
+            <item
+                    android:id="@+id/bar"
+                    android:title="bar"/>
+            <item
+                    android:id="@+id/psi"
+                    android:title="psi"/>
+            <item
+                    android:id="@+id/inHg"
+                    android:title="inHg"/>
+            <item
+                    android:id="@+id/mmHg"
+                    android:title="mmHg"/>
+        </menu>
+    </item>
+    <item
+            android:id="@+id/three"
+            android:title="Hình nền">
+        <menu>
+            <item
+                    android:id="@+id/turnOn"
+                    android:title="Bật"/>
+            <item
+                    android:id="@+id/turnOff"
+                    android:title="Tắt"/>
+        </menu>
+    </item>
+    <item
+            android:id="@+id/four"
+            android:title="Thông báo">
+        <menu>
+            <item
+                    android:id="@+id/turnOn_No"
+                    android:title="Bật"/>
+            <item
+                    android:id="@+id/turnOff_No"
+                    android:title="Tắt"/>
+        </menu>
+    </item>
+</menu>

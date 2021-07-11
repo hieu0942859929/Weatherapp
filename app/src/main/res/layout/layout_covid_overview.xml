@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+    <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_item">
+
+        <TextView
+                android:id="@+id/tvInfected1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Bị nhiễm"
+                android:textColor="#fff"/>
+
+        <ImageView
+                android:id="@+id/ivGlobal1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/tvInfected1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/infectedWorld1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInfected1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivGlobal1"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textColor="#FF0000"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/ivCountry1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/infectedWorld1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/infectedVN1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infectedWorld1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivCountry1"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textColor="#FF0000"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_item">
+
+        <TextView
+                android:id="@+id/tvDeath2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Tử vong"
+                android:textColor="#fff"/>
+
+        <ImageView
+                android:id="@+id/ivGlobal2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/tvDeath2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/deathOfWorld2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDeath2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivGlobal2"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/ivCountry2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/deathOfWorld2"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/deathOfVN2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deathOfWorld2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivCountry2"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_item">
+
+        <TextView
+                android:id="@+id/tvRecover3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Hồi phục"
+                android:textColor="#fff"/>
+
+        <ImageView
+                android:id="@+id/ivGlobal3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/tvRecover3"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/recoverOfWorld3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvRecover3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivGlobal3"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textColor="#51FF05"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/ivCountry3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/recoverOfWorld3"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icon_global"/>
+
+        <TextView
+                android:id="@+id/recoverOfVN3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recoverOfWorld3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/ivCountry3"
+                android:gravity="center"
+                android:text="Bị nhiễm"
+                android:textColor="#51FF05"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

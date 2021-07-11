@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tvGHI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:text="Bầu trời nhiều mây GHI - Bức xạ ngang toàn cầu"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/GHI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGHI"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"/>
+
+    <TextView
+            android:id="@+id/tvDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GHI"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:text="Bầu trời nhiều mây DNI - Chiếu xạ bình thường trực tiếp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/DNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDNI"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

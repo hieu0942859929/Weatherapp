@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/one"
+            android:title="Bản đồ áp suất"/>
+    <item
+            android:id="@+id/two"
+            android:title="Bản đồ lượng mưa"/>
+    <item
+            android:id="@+id/three"
+            android:title="Bản đồ mây"/>
+    <item
+            android:id="@+id/four"
+            android:title="Bản đồ gió"/>
+    <item
+            android:id="@+id/five"
+            android:title="Bản đồ nhiệt"/>
+</menu>
